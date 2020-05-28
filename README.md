@@ -40,7 +40,9 @@ We used feature engineering to extract similarities from provided answers and so
 
 > Containment is defined as the *intersection* of the n-gram word count of the Wikipedia Source Text (S) with the n-gram word count of the Student  Answer Text (S) *divided* by the n-gram word count of the Student Answer Text.
 
-![equation]\frac{\sum count (ngram A)  \cap \sum count (ngram S) }{\sum count (ngram A)}
+<p align="center">
+  <img src="equation.gif">
+</p>
 
 If the two texts have no n-grams in common, the containment will be 0, but if _all_ their n-grams intersect then the containment will be 1. Intuitively, you can see how having longer n-gram's in common, might be an indication of cut-and-paste plagiarism.
 
